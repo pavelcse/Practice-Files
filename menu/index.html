@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+        margin:0;
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+        transition: 0.3s
+    }
+
+    .sidenav a:hover, .offcanvas a:focus{
+        color: #f1f1f1;
+    }
+
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px !important;
+        margin-left: 50px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
+</style>
+<body>
+<div style="min-height: 75px;background-color: orangered; display: flex; padding-left: 10px;">
+    <span style="font-size:30px;cursor:pointer;color: white; align-self: center;" onclick="openNav()">
+    	<i class="fas fa-align-justify" "></i>
+    </span>
+</div>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+</div>
+
+<script>
+    function openNav() {
+        var e = document.getElementById("mySidenav");
+        if (e.style.width == '250px')
+        {
+            e.style.width = '0px';
+        }
+        else
+        {
+            e.style.width = '250px';
+            e.style.height = '100%';
+            e.style.top = '0';
+        }
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lazy Loading</title>
+    <style>
+        *{
+            font-family: Arial;
+        }
+
+        html, body{
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        .container{
+            position: relative;
+            width: 100%;
+            padding: 5px 5px;
+        }
+
+        .row{
+            display: flex;
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+        }
+
+        .col-2 {
+            width: 16.66%;
+            float: left;
+        }
+
+        .col-4 {
+            width: 33.33%;
+            float: left;
+        }
+
+        .col-6 {
+            width: 50%;
+            float: left;
+        }
+
+        @media screen and (max-width: 300px) {
+            /* For mobile phones: */
+            [class*="col-"] {
+                width: 100%;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="row" style= "background-color: #F1F1F1;margin: 5px auto">
+        <div class="col-4" style="padding: 7px;">
+            <img src="rice_coocker.jpg" alt="" style="width: 60%">
+        </div>
+        <div class="col-6" style="display: inline-flex;align-items: center;">
+            <h5 style="font-weight: bold">Video (50)</h5>
+        </div>
+        <div class="col-2" style="display:inline-flex;align-items: center;padding-right: 7px;">
+            <i class="fas fa-caret-right" style="margin-left: auto;"></i>
+        </div>
+    </div>
+    <div class="row" style= "background-color: #F1F1F1;margin: 5px auto">
+        <div class="col-4" style="padding: 7px;">
+            <img src="humidity_controller.jpg" alt="" style="width: 60%">
+        </div>
+        <div class="col-6" style="display: inline-flex;align-items: center;">
+            <h5 style="font-weight: bold">Video (50)</h5>
+        </div>
+        <div class="col-2" style="display:inline-flex;align-items: center;padding-right: 7px;">
+            <i class="fas fa-caret-right" style="margin-left: auto;"></i>
+        </div>
+    </div>
+    <div class="row" style= "background-color: #F1F1F1;margin: 5px auto">
+        <div class="col-4" style="padding: 7px;">
+            <img src="simple.jpg" alt="" style="width: 60%">
+        </div>
+        <div class="col-6" style="display: inline-flex;align-items: center;">
+            <h5 style="font-weight: bold">Video (50)</h5>
+        </div>
+        <div class="col-2" style="display:inline-flex;align-items: center;padding-right: 7px;">
+            <i class="fas fa-caret-right" style="margin-left: auto;"></i>
+        </div>
+    </div>
+    <div class="row" style= "background-color: #F1F1F1;margin: 5px auto">
+        <div class="col-4" style="padding: 7px;">
+            <img src="fan.jpg" alt="" style="width: 60%">
+        </div>
+        <div class="col-6" style="display: inline-flex;align-items: center;">
+            <h5 style="font-weight: bold">Video (50)</h5>
+        </div>
+        <div class="col-2" style="display:inline-flex;align-items: center;padding-right: 7px;">
+            <i class="fas fa-caret-right" style="margin-left: auto;"></i>
+        </div>
+    </div>
+    <div class="row" style= "background-color: #F1F1F1;margin: 5px auto">
+        <div class="col-4" style="padding: 7px;">
+            <img src="bedsure_flannel.jpg" alt="" style="width: 60%">
+        </div>
+        <div class="col-6" style="display: inline-flex;align-items: center;">
+            <h5 style="font-weight: bold">Video (50)</h5>
+        </div>
+        <div class="col-2" style="display:inline-flex;align-items: center;padding-right: 7px;">
+            <i class="fas fa-caret-right" style="margin-left: auto;"></i>
+        </div>
+    </div>
+    <div class="row" style= "background-color: #F1F1F1;margin: 5px auto">
+        <div class="col-4" style="padding: 7px;">
+            <img src="bed_with_sheetjpg.jpg" alt="" style="width: 60%">
+        </div>
+        <div class="col-6" style="display: inline-flex;align-items: center;">
+            <h5 style="font-weight: bold">Video (50)</h5>
+        </div>
+        <div class="col-2" style="display:inline-flex;align-items: center;padding-right: 7px;">
+            <i class="fas fa-caret-right" style="margin-left: auto;"></i>
+        </div>
+    </div>
+    <div class="row" style= "background-color: #F1F1F1;margin: 5px auto">
+        <div class="col-4" style="padding: 7px;">
+            <img src="rice_coocker.jpg" alt="" style="width: 60%">
+        </div>
+        <div class="col-6" style="display: inline-flex;align-items: center;">
+            <h5 style="font-weight: bold">Video (50)</h5>
+        </div>
+        <div class="col-2" style="display:inline-flex;align-items: center;padding-right: 7px;">
+            <i class="fas fa-caret-right" style="margin-left: auto;"></i>
+        </div>
+    </div>
+    <div class="row" style= "background-color: #F1F1F1;margin: 5px auto">
+        <div class="col-4" style="padding: 7px;">
+            <img src="rice_coocker.jpg" alt="" style="width: 60%">
+        </div>
+        <div class="col-6" style="display: inline-flex;align-items: center;">
+            <h5 style="font-weight: bold">Video (50)</h5>
+        </div>
+        <div class="col-2" style="display:inline-flex;align-items: center;padding-right: 7px;">
+            <i class="fas fa-caret-right" style="margin-left: auto;"></i>
+        </div>
+    </div>
+    <div class="row" style= "background-color: #F1F1F1;margin: 5px auto">
+        <div class="col-4" style="padding: 7px;">
+            <img src="rice_coocker.jpg" alt="" style="width: 60%">
+        </div>
+        <div class="col-6" style="display: inline-flex;align-items: center;">
+            <h5 style="font-weight: bold">Video (50)</h5>
+        </div>
+        <div class="col-2" style="display:inline-flex;align-items: center;padding-right: 7px;">
+            <i class="fas fa-caret-right" style="margin-left: auto;"></i>
+        </div>
+    </div>
+    <div class="row" style= "background-color: #F1F1F1;margin: 5px auto">
+        <div class="col-4" style="padding: 7px;">
+            <img src="rice_coocker.jpg" alt="" style="width: 60%">
+        </div>
+        <div class="col-6" style="display: inline-flex;align-items: center;">
+            <h5 style="font-weight: bold">Video (50)</h5>
+        </div>
+        <div class="col-2" style="display:inline-flex;align-items: center;padding-right: 7px;">
+            <i class="fas fa-caret-right" style="margin-left: auto;"></i>
+        </div>
+    </div>
+    <div class="row" style= "background-color: #F1F1F1;margin: 5px auto">
+        <div class="col-4" style="padding: 7px;">
+            <img src="rice_coocker.jpg" alt="" style="width: 60%">
+        </div>
+        <div class="col-6" style="display: inline-flex;align-items: center;">
+            <h5 style="font-weight: bold">Video (50)</h5>
+        </div>
+        <div class="col-2" style="display:inline-flex;align-items: center;padding-right: 7px;">
+            <i class="fas fa-caret-right" style="margin-left: auto;"></i>
+        </div>
+    </div>
+</div>
+</body>
+</html>
